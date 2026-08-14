@@ -157,15 +157,8 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
 .invite-preview::before { left: -42px; transform: rotate(-18deg); }
 .invite-preview::after { right: -42px; transform: scaleX(-1) rotate(-18deg); }
 .preview-ornament { color: var(--gold); font-size: 26px; }
-.preview-kicker { margin: 8px 0 0; text-transform: uppercase; letter-spacing: .22em; font-size: 9px; color: #a08b7f; }
-.invite-preview h1 {
-  margin: 24px 0 10px;
-  font-family: "Great Vibes", cursive;
-  color: #7c6555;
-  font-weight: 400;
-  font-size: clamp(42px, 12vw, 62px);
-  line-height: .95;
-}
+.preview-kicker { margin: 10px auto 0; max-width: 78%; text-transform: none; letter-spacing: .02em; font-size: clamp(9px, 1.7vw, 11px); line-height: 1.45; color: #9a8578; font-style: italic; }
+.invite-preview h1 { margin: 18px 0 10px; font-family: "Great Vibes", cursive; color: #7c6555; font-weight: 400; font-size: clamp(36px, 10vw, 56px); line-height: 1; white-space: nowrap; }
 .invite-preview h1 span { color: var(--gold); }
 .preview-date { font-family: "Cormorant Garamond", serif; font-size: 18px; letter-spacing: .22em; color: #9b8067; }
 .preview-reveal {
@@ -431,3 +424,6 @@ footer p { margin:8px 0; font-family:"Cormorant Garamond", serif; font-size:16px
     height: min(130.56vw, calc(100dvh - 16px));
   }
 }
+
+.quote-author { display: inline; font-style: normal; color: #a88a6b; white-space: nowrap; }
+@media (max-width: 420px) { .preview-kicker { max-width: 84%; font-size: 9px; } .invite-preview h1 { font-size: clamp(34px, 9vw, 48px); } }
