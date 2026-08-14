@@ -167,10 +167,10 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
   text-align: center;
   border-radius: 3px;
   background:
-    radial-gradient(circle at 25% 10%, rgba(255,255,255,.94), transparent 30%),
-    linear-gradient(180deg, #fffdfb, #f7f0e9);
-  border: 1px solid rgba(185,144,87,.26);
-  box-shadow: 0 4px 10px rgba(98,75,59,.08);
+    radial-gradient(circle at 25% 10%, rgba(255,255,255,.28), transparent 30%),
+    linear-gradient(180deg, #f3e5dd, #ead9d0);
+  border: 1px solid rgba(185,144,87,.18);
+  box-shadow: 0 4px 10px rgba(98,75,59,.06);
   transform: translateY(28%);
   transition: transform 1.2s cubic-bezier(.18,.75,.25,1) .5s;
   overflow: hidden;
