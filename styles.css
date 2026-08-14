@@ -171,8 +171,9 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
     linear-gradient(180deg, #f3e5dd, #ead9d0);
   border: 1px solid rgba(185,144,87,.18);
   box-shadow: 0 4px 10px rgba(98,75,59,.06);
-  transform: translateY(28%);
-  transition: transform 1.2s cubic-bezier(.18,.75,.25,1) .5s;
+  opacity: 0;
+  transform: translateY(102%);
+  transition: transform 1.2s cubic-bezier(.18,.75,.25,1) .18s, opacity .15s linear .18s;
   overflow: hidden;
 }
 .invite-preview::before,
@@ -268,7 +269,7 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
 .wax-seal:hover { transform: translate(-50%,-50%) scale(1.04); }
 .tap-note { display: none !important; }
 .envelope.open .envelope-flap { transform: rotateX(180deg); z-index: 2; }
-.envelope.open .invite-preview { transform: translateY(-12%); z-index: 6; }
+.envelope.open .invite-preview { opacity: 1; transform: translateY(8%); z-index: 6; }
 .envelope.open .wax-seal { opacity: 0; transform: translate(-50%,-50%) scale(.7); pointer-events: none; }
 .envelope.open .preview-reveal { opacity: 1; transform: translateY(0); }
 .envelope.open .open-invite-btn { opacity: 1; transform: translateY(0); }
@@ -452,3 +453,6 @@ footer p { margin:8px 0; font-family:"Cormorant Garamond", serif; font-size:16px
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition-duration: .01ms !important; }
 }
+
+.invite-preview { pointer-events: none; }
+.envelope.open .invite-preview { pointer-events: auto; }

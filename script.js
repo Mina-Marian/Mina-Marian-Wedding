@@ -13,7 +13,7 @@ function openEnvelope() {
   if (opened) return;
   opened = true;
   envelope.classList.add('open');
-  tapNote.textContent = 'Tap the invitation to continue';
+  if (tapNote) tapNote.textContent = 'Tap the invitation to continue';
 }
 
 function enterInvitation() {
