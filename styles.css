@@ -234,8 +234,13 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
   transform: translate(-50%,-50%);
   width: 82px;
   height: 82px;
+  padding: 0;
   border: 0;
   border-radius: 46% 54% 51% 49% / 52% 46% 54% 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #977245;
   background:
     radial-gradient(circle at 36% 28%, #fffaf5 0 10%, transparent 12%),
@@ -252,8 +257,12 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
 }
 .wax-seal span {
   position: relative;
+  display: block;
+  line-height: 1;
+  transform: translateY(-1px);
   font-family: "Great Vibes", cursive;
   font-size: 29px;
+  text-align: center;
   text-shadow: 0 1px rgba(255,255,255,.9);
 }
 .wax-seal:hover { transform: translate(-50%,-50%) scale(1.04); }
@@ -422,7 +431,16 @@ footer p { margin:8px 0; font-family:"Cormorant Garamond", serif; font-size:16px
   .opening-title { margin-bottom: 12px; }
   .envelope-wrap { width: 88vw; max-width: 360px; height: 122.22vw; max-height: 500px; }
   .wax-seal { width: 72px; height: 72px; }
-  .wax-seal span { font-size: 25px; }
+  .wax-seal span {
+  position: relative;
+  display: block;
+  line-height: 1;
+  transform: translateY(-1px);
+  font-family: "Great Vibes", cursive;
+  font-size: 29px;
+  text-align: center;
+  text-shadow: 0 1px rgba(255,255,255,.9);
+}
   .invite-preview { padding-top: 36px; }
   .date-lockup { gap: 8px; }
   .date-lockup > span { width: 76px; font-size: 13px; }
