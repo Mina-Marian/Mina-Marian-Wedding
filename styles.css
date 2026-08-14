@@ -266,7 +266,7 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
   text-shadow: 0 1px rgba(255,255,255,.9);
 }
 .wax-seal:hover { transform: translate(-50%,-50%) scale(1.04); }
-.tap-note { position: relative; margin: 18px 0 0; font-family: "Cormorant Garamond", serif; font-size: 14px; color: #a08e83; letter-spacing: .08em; transition: opacity .3s; }
+.tap-note { display: none !important; }
 .envelope.open .envelope-flap { transform: rotateX(180deg); z-index: 2; }
 .envelope.open .invite-preview { transform: translateY(-12%); z-index: 6; }
 .envelope.open .wax-seal { opacity: 0; transform: translate(-50%,-50%) scale(.7); pointer-events: none; }
